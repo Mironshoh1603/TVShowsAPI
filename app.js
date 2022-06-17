@@ -25,7 +25,7 @@ tourRouter.param('', (req, res, next, val) => {
   next();
 });
 
-app.use('/api/v1/tours', tourRouter);
+app.use('/api/v1/shows', tourRouter);
 app.use('/api/v1/users', userRouter);
 
 app.all('*', (req, res, next) => {
